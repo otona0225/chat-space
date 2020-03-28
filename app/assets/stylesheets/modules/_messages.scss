@@ -81,6 +81,7 @@ body{
     }
   }
 
+
 .left-content-bottom{
   margin: 0;
   padding: 0;
@@ -88,10 +89,11 @@ body{
   list-style: none;
 }
 
-    .group{
-      padding: 20px 20px 40px;
-      color: #FFFFFF;
-      list-style: none;
+
+  .group{
+    padding: 20px 20px 40px;
+    color: #FFFFFF;
+    list-style: none;
 
     &__link{
       display: block;
@@ -194,7 +196,8 @@ body{
       }
      }
 
-   .chat-footer{
+  .chat-footer{
+
     position: absolute;
     right: 0;
     left: 0;
@@ -228,21 +231,24 @@ body{
         text-align: center;
         width: 40px;
 
+
         .hidden{
           display: none;
         }
       }
 
-  input.send{
-    display: inline-block;
-    width: 100px;
-    line-height: 50px;
-    text-align: center;
-    margin-left: 15px;
-    background-color: #38aef0;
-    border: none;
-    color: #FFFFFF;
-    padding: 0;
+
+    input.send{
+      display: inline-block;
+      float: right;
+      width: 100px;
+      line-height: 50px;
+      text-align: center;
+      margin-left: 15px;
+      background-color: #38aef0;
+      border: none;
+      color: #FFFFFF;
+      padding: 0;
+    }
   }
- }
 }
