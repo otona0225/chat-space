@@ -38,6 +38,7 @@ body{
   background-color: #2f3e51;
 }
 
+
   .left-content-top{
     padding: 20px 20px 20px 20px;
     height: 100px;
@@ -85,6 +86,7 @@ body{
   color: #2f3e51;
   list-style: none;
 }
+
 
   .group{
     padding: 20px 20px 40px;
@@ -151,6 +153,7 @@ body{
           color: #38aef0;
           font-size: 14px;
           border: 2px solid;
+
         }
       }
     }
@@ -195,6 +198,7 @@ body{
 
 
   .chat-footer{
+
     position: absolute;
     right: 0;
     left: 0;
@@ -231,6 +235,7 @@ body{
         display: none;
       }
     }
+
 
     input.send{
       display: inline-block;
