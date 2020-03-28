@@ -72,10 +72,6 @@ body{
               margin-left: 5px;
             }
           }
-          a{
-            color: #ffffff;
-            margin-left: 5px;
-          }
  
       }
     }
@@ -88,10 +84,10 @@ body{
   list-style: none;
 }
 
-    .group{
-      padding: 20px 20px 40px;
-      color: #FFFFFF;
-      list-style: none;
+  .group{
+    padding: 20px 20px 40px;
+    color: #FFFFFF;
+    list-style: none;
 
     &__link{
       display: block;
@@ -132,69 +128,69 @@ body{
       padding-top: 35px;
     }
 
-  .chat-members{
-    font-size: 12px;
-    color: #999999;
-    padding-top: 15px;
-    clear: left;
-  }
-  .right-content__edit{
-    float: right;
-    height: 100px;
+    .chat-members{
+      font-size: 12px;
+      color: #999999;
+      padding-top: 15px;
+      clear: left;
+    }
+    .right-content__edit{
+      float: right;
+      height: 100px;
 
- .edit-link{
-  text-decoration: none;
+      .edit-link{
+        text-decoration: none;
 
-    .edit-button {
-      margin: 28px 0;
-      padding-right: 20px;
-      padding-left: 20px;
-      line-height: 40px;
-      color: #38aef0;
-      font-size: 14px;
-      border: 2px solid;
+        .edit-button {
+          margin: 28px 0;
+          padding-right: 20px;
+          padding-left: 20px;
+          line-height: 40px;
+          color: #38aef0;
+          font-size: 14px;
+          border: 2px solid;
         }
       }
     }
   }
 
-    &__middle{
-      border-top: #eeeeee;
-      padding: 0 40px 0;
-      height: calc(100% - 200px);
-      position: relative;
-      overflow-y: scroll;
+  &__middle{
+    border-top: #eeeeee;
+    padding: 0 40px 0;
+    height: calc(100% - 200px);
+    position: relative;
+    overflow-y: scroll;
 
-      .message{
-        padding-top: 46px;
+    .message{
+      padding-top: 46px;
 
-       &__contents{
+      &__contents{
 
-         &__sender{
-           float: left;
-           font-size: 16px;
-           font-weight: bold;
-           color: #434A54;
-         }
-
-         &__time{
-           float: left;
-           font-size: 12px;
-           color: #999999;
-           padding-left: 10px;
-         }
-
-         &__content{
-           clear: left;
-           padding: 10px 0 40px;
-           font-size: 14px;
-           color: #434A54;
+        &__sender{
+          float: left;
+          font-size: 16px;
+          font-weight: bold;
+          color: #434A54;
         }
-       }
-      }
-     }
 
-   .chat-footer{
+        &__time{
+          float: left;
+          font-size: 12px;
+          color: #999999;
+          padding-left: 10px;
+        }
+
+        &__content{
+          clear: left;
+          padding: 10px 0 40px;
+          font-size: 14px;
+          color: #434A54;
+        }
+      }
+    }
+  }
+
+  .chat-footer{
     position: absolute;
     right: 0;
     left: 0;
@@ -217,32 +213,31 @@ body{
       }
     }
 
-      &__image{
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: inline-block;
-        height: 50px;
-        line-height: 50px;
-        cursor: pointer;
-        text-align: center;
-        width: 40px;
-
-        .hidden{
-          display: none;
-        }
+    &__image{
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      cursor: pointer;
+      text-align: center;
+      width: 40px;
+      .hidden{
+        display: none;
       }
+    }
 
-  input.send{
-    display: inline-block;
-    width: 100px;
-    line-height: 50px;
-    text-align: center;
-    margin-left: 15px;
-    background-color: #38aef0;
-    border: none;
-    color: #FFFFFF;
-    padding: 0;
+    input.send{
+      display: inline-block;
+      width: 100px;
+      line-height: 50px;
+      text-align: center;
+      margin-left: 15px;
+      background-color: #38aef0;
+      border: none;
+      color: #FFFFFF;
+      padding: 0;
+    }
   }
- }
 }
