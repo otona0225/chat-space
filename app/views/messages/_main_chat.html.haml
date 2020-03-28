@@ -23,6 +23,6 @@
     .label.chat-footer__body
       %input.text{row: "1", placeholder: "type a message", name: "message[body]", id: "message_body"}
       %label.chat-footer__image
-        %set_image{type: "file", name: "message[image]", id: "message_image"}
         = icon('fa','image',class: 'icon')
+        %input.hidden{type: 'file'}
     %input.send{type: "submit", value: "Send"}

@@ -64,21 +64,18 @@ body{
         width: 60px;
         float: right;
         display: flex;
-
-        &__setting{
-          display: inline-block;
-          margin-left: 5px;
-          line-height: 20px;
-          font-size: 20px;
-          display: block;
-          list-style: none;
-          display: flex;
-          justify-content: flex-end;
-          width: 60px;
+        list-style: none;
+        justify-content: flex-end;
+          li{
+            i{
+              color: #ffffff;
+              margin-left: 5px;
+            }
+          }
           a{
             color: #ffffff;
+            margin-left: 5px;
           }
-        } 
  
       }
     }
@@ -159,7 +156,7 @@ body{
         }
       }
     }
-    }
+  }
 
     &__middle{
       border-top: #eeeeee;
@@ -231,14 +228,13 @@ body{
         text-align: center;
         width: 40px;
 
-        .set_image{
+        .hidden{
           display: none;
         }
       }
 
   input.send{
     display: inline-block;
-    float: right;
     width: 100px;
     line-height: 50px;
     text-align: center;
