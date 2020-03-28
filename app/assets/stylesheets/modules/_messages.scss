@@ -37,59 +37,56 @@ body{
   height: 100vh;
   background-color: #2f3e51;
 }
-.left-content-top{
-  padding: 20px 20px 20px 20px;
-  height: 100px;
-  width: 300px;
-  background-color: #253141;
-  float:left;
 
-  .left-content-top__box{
-    height: 20px;
-    width: 260px;
-    margin: 20px 0 20px;
 
-    &__user-name{
+  .left-content-top{
+    padding: 20px 20px 20px 20px;
+    height: 100px;
+    width: 300px;
+    background-color: #253141;
+    float:left;
+
+    &__box{
       height: 20px;
-      width: calc(260px - 60px);
-      float:left;
-      font-size: 16px;
-      font-weight: bold;
-      color: #ffffff;
-      line-height: 20px;
-      letter-spacing: 2px;
-    }
-    &__set{
-      height: 20px;
-      width: 60px;
-      float: right;
-      display: flex;
+      width: 260px;
+      margin: 20px 0 20px;
 
-      &__setting{
-        display: inline-block;
-        margin-left: 5px;
+      &__user-name{
+        height: 20px;
+        width: calc(260px - 60px);
+        float:left;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
         line-height: 20px;
-        font-size: 20px;
-        display: block;
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
+        letter-spacing: 2px;
+      }
+      &__set{
+        height: 20px;
         width: 60px;
-        a{
-          color: #ffffff;
-        }
-      } 
+        float: right;
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+          li{
+            i{
+              color: #ffffff;
+              margin-left: 5px;
+            }
+          }
  
+      }
     }
   }
-}
 
-.left-content-bottom{
-  margin: 0;
-  padding: 0;
-  color: #2f3e51;
-  list-style: none;
-}
+
+  .left-content-bottom{
+    margin: 0;
+    padding: 0;
+    color: #2f3e51;
+    list-style: none;
+  }
+
 
   .group{
     padding: 20px 20px 40px;
@@ -156,48 +153,52 @@ body{
           color: #38aef0;
           font-size: 14px;
           border: 2px solid;
+
         }
       }
     }
   }
 
-    &__middle{
-      border-top: #eeeeee;
-      padding: 0 40px 0;
-      height: calc(100% - 200px);
-      position: relative;
-      overflow-y: scroll;
 
-      .message{
-        padding-top: 46px;
+  &__middle{
+    border-top: #eeeeee;
+    padding: 0 40px 0;
+    height: calc(100% - 200px);
+    position: relative;
+    overflow-y: scroll;
 
-       &__contents{
+    .message{
+      padding-top: 46px;
 
-         &__sender{
-           float: left;
-           font-size: 16px;
-           font-weight: bold;
-           color: #434A54;
-         }
+      &__contents{
 
-         &__time{
-           float: left;
-           font-size: 12px;
-           color: #999999;
-           padding-left: 10px;
-         }
-
-         &__content{
-           clear: left;
-           padding: 10px 0 40px;
-           font-size: 14px;
-           color: #434A54;
+        &__sender{
+          float: left;
+          font-size: 16px;
+          font-weight: bold;
+          color: #434A54;
         }
-       }
+
+        &__time{
+          float: left;
+          font-size: 12px;
+          color: #999999;
+          padding-left: 10px;
+        }
+
+        &__content{
+          clear: left;
+          padding: 10px 0 40px;
+          font-size: 14px;
+          color: #434A54;
+        }
       }
-     }
+    }
+  }
+
 
   .chat-footer{
+
     position: absolute;
     right: 0;
     left: 0;
@@ -220,25 +221,24 @@ body{
       }
     }
 
-      &__image{
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: inline-block;
-        height: 50px;
-        line-height: 50px;
-        cursor: pointer;
-        text-align: center;
-        width: 40px;
-
-        .set_image{
-          display: none;
-        }
+    &__image{
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      cursor: pointer;
+      text-align: center;
+      width: 40px;
+      .hidden{
+        display: none;
       }
+    }
+
 
     input.send{
       display: inline-block;
-      float: right;
       width: 100px;
       line-height: 50px;
       text-align: center;

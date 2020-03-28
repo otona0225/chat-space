@@ -1,0 +1,28 @@
+.right-content.clearfix
+
+  .right-content__top.cleafix
+    %p.chat-group.clearfix spring
+    .right-content__edit
+      = link_to "#",class: "edit-link" do
+        %p.edit-button Edit
+    %p.chat-members.clearfix Members: sakura midori
+
+  .right-content__middle
+    %ul.message
+      %li.message__contents.cleafix
+        %p.message__contents__sender sakura
+        %p.message__contents__time 2020/02/22 00:00:00
+        %p.message__contents__content こんにちは！
+      %li.message__contents.cleafix
+        %p.message__contents__sender midori
+        %p.message__contents__time 2020/02/22 10:00:00
+        %p.message__contents__content こんばんは！
+
+  .chat-footer
+    %form
+    .label.chat-footer__body
+      %input.text{row: "1", placeholder: "type a message", name: "message[body]", id: "message_body"}
+      %label.chat-footer__image
+        = icon('fa','image',class: 'icon')
+        %input.hidden{type: 'file'}
+    %input.send{type: "submit", value: "Send"}
