@@ -1,0 +1,22 @@
+.left-content
+  .left-content-top.clearfix
+    .left-content-top__box
+      %p.left-content-top__box__user-name
+        ユーザー名
+      %ul.left-content-top__box__set
+        %li.left-content-top__box__setting
+          = link_to "#" do
+            = icon('far', 'edit')
+
+        %li.left-content-top__box__setting
+          = link_to "#" do
+            = icon('fas', 'cog')
+
+
+  .left-contant-bottom
+    %li.group
+      %p.group__name spring
+      %p.group__chat-message 花粉症は辛い
+    %li.group
+      %p.group__name summer
+      %p.group__chat-message 夏が待ち遠しい
