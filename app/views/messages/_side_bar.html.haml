@@ -5,7 +5,7 @@
         = current_user.name
       %ul.left-content-top__box__set
         %li.left-content-top__box__edit
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('far', 'edit')
 
         %li.left-content-top__box__cog
@@ -15,9 +15,10 @@
 
 
   .left-contant-bottom
-    %li.group
-      %p.group__name spring
-      %p.group__chat-message 花粉症は辛い
-    %li.group
-      %p.group__name summer
-      %p.group__chat-message 夏が待ち遠しい
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
