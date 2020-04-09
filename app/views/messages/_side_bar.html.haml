@@ -4,21 +4,20 @@
       %p.left-content-top__box__user-name
         = current_user.name
       %ul.left-content-top__box__set
-        %li.left-content-top__box__edit
+        %li.left-content-top__box__set__edit
           = link_to new_group_path do
             = icon('far', 'edit')
 
-        %li.left-content-top__box__cog
-          = link_to "#" do
-            = link_to edit_user_path(current_user) do
-              = icon('fas', 'cog')
+        %li.left-content-top__box__set__cog
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog')
 
 
   .left-contant-bottom
     - current_user.groups.each do |group|
       .group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
-            メッセージはまだありません。
+            = group.show_last_message
