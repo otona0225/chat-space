@@ -1,13 +1,22 @@
 .right-content.clearfix
 
   .right-content__top.cleafix
-    %p.chat-group.clearfix spring
+    .chat-group.clearfix{data: {group_id: @group.id}}
+      = @group.name
+      -# =f.label :name, class: 'chat-group__label'
+    .chat-menbers.clearfix
+      Members:
+      - @group.users.each do |user|
+        = user.name
     .right-content__edit
-      = link_to "#",class: "edit-link" do
-        %p.edit-button Edit
-    %p.chat-members.clearfix Members: sakura midori
-
+      =link_to 'Edit', edit_group_path(@group)
+      -# = link_to "#",class: "edit-link" do
+        .edit-button Edit
+    
+    -#   = f.collection_check_boxes :user_ids, User.all, :id, :name
   .right-content__middle
+    .messages
+      = render @messages
     %ul.message
       %li.message__contents.cleafix
         %p.message__contents__sender sakura
@@ -19,10 +28,11 @@
         %p.message__contents__content こんばんは！
 
   .chat-footer
-    %form
-    .label.chat-footer__body
-      %input.text{row: "1", placeholder: "type a message", name: "message[body]", id: "message_body"}
-      %label.chat-footer__image
-        = icon('fa','image',class: 'icon')
-        %input.hidden{type: 'file'}
-    %input.send{type: "submit", value: "Send"}
+    .form
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
