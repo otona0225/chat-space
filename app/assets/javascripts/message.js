@@ -53,8 +53,8 @@ $(function(){
   })
     .done(function(data){
       var html = buildHTML(data);
-      $('.messages').append(html);
-      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+      $('.right-content__middle').append(html);
+      $('.right-content__middle').animate({ scrollTop: $('.right-content__middle')[0].scrollHeight});
       $('form')[0].reset();
       $('.form__submit').prop('disabled', false);
       
