@@ -65,6 +65,7 @@ $(function(){
   })
 
   var reloadMessages = function() {
+    group_id = $('.chat-group').last().data('group-id')
     var last_message_id = $('.message:last').data("message-id");
     $.ajax({
       url: "api/messages",
@@ -78,8 +79,8 @@ $(function(){
         $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
         });
-        $('.messages').append(insertHTML);
-        $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+        $('.right-content__middle').append(insertHTML);
+        $('.right-content__middle').animate({ scrollTop: $('.right-content__middle')[0].scrollHeight});
       }
     })
     .fail(function() {
