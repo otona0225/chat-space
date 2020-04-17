@@ -123,9 +123,9 @@ body{
   background-color: #fafafa;
 
   &__top{
-  height: 100px;
-  padding: 0 40px 0;
-  background-color: #ffffff;
+    height: 100px;
+    padding: 0 40px 0;
+    background-color: #ffffff;
 
     .chat-group{
       float: left;
@@ -141,27 +141,22 @@ body{
       clear: left;
     }
     .right-content__edit{
-      // float: right;
+      float: right;
       height: 100px;
       position: absolute;
       right: 40px;
-      top: 5px;
+      top: 30px;
 
-      .edit-link{
+      a {
+        font-size: 14px;
         text-decoration: none;
-
-        .edit-button {
-          margin: 28px 0;
-          padding-right: 20px;
-          padding-left: 20px;
-          line-height: 40px;
-          color: #38aef0;
-          font-size: 14px;
-          border: 2px solid;
-        }
+        border: solid 2px #38aef0;
+        padding: 10px 20px;
+        color:#38aef0;
       }
     }
   }
+
 
 
   &__middle{
@@ -210,11 +205,26 @@ body{
     background-color: #ddd;
 
     .form{
+      height: 50px;
+      width: 100%;
       position: relative;
       float: left;
       width: calc(100% - 115px);
       height: 50px;
+      .form__submit{
+        display: inline-block;
+        width: 100px;
+        line-height: 50px;
+        text-align: center;
+        margin-left: 15px;
+        background-color: #38aef0;
+        border: none;
+        color: #FFFFFF;
+        padding: 0;
+        float: right;
+      }
 
+      
       .form__message{
         height: 50px;
         width: 100%;
@@ -238,16 +248,6 @@ body{
   
     }
 
-    .form__submit{
-      display: inline-block;
-      width: 100px;
-      line-height: 50px;
-      text-align: center;
-      margin-left: 15px;
-      background-color: #38aef0;
-      border: none;
-      color: #FFFFFF;
-      padding: 0;
-    }
+    
   }
 }
